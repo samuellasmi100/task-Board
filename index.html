@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 class="h1">welcome to my website</h1>
+
+
+        <div class="form-group">
+            <input type="text" placeholder="Add A Mision" class="form-control aMission" onkeyup="saveFromToLocalStorage()">
+            <input type="date" placeholder="Add Date" class="form-control aDate" onchange="saveFromToLocalStorage()">
+            <input type="time" placeholder="Add Time" class="form-control aTime" onchange="saveFromToLocalStorage()">
+            <button onclick="addMission();">Add Mision</button>
+            <button onclick="resetForm()">Reset Form</button>
+        </div>
+    
+        <div class="wrapperTasks">
+           
+        </div>
+    </div>
+   
+    <script src="./script.js"></script>
+</body>
+
+</html>
